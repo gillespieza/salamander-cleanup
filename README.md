@@ -1,7 +1,9 @@
 # salamander-cleanup
 ## Salamander Cleanup and Optimize WordPress
 
-This plugin removes unnecessary meta tags, disables emojis, and disables email notifications for updates. It also removes various links in the document head, which you might actually want to keep (eg, RSS feeds), depending on your business needs. The following functions are implemented:
+*NOTE:* This isn't really a "proper" plugin - it's really just a collection of snippets that I find useful in almost every WordPress site I set up.
+
+This WordPress plugin removes unnecessary meta tags, disables emojis, and disables email notifications for updates. It also removes various links in the document head, which you might actually want to keep (eg, RSS feeds), depending on your business needs. The following functions are implemented:
 
 ## Disable Emojis
 - Disable emojis from being autoloaded on the front-end, back-end, in RSS feeds, embeds, emails, etc. We do this because most of our clients don't write in Japanese characters or use emojis on their websites.
