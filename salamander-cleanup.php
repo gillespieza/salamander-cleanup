@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: Cleanup and Optimize WordPress
+ * Plugin Name: Salamander Cleanup and Optimize WordPress
  * Description: This plugin removes unnecessary meta tags, disables emojis, and disables email notifications for updates.
  * Version:     1.0.0
  * Author:      gillespieza
@@ -12,7 +12,7 @@
  * @package     salamander-cleanup
  */
 
-// Security Check: Prevent this file being executed outside the WordPress context.
+// Security Check: Prevent this file from being executed outside the WordPress context.
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
