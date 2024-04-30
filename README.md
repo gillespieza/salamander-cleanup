@@ -1,16 +1,16 @@
-# salamander-cleanup
-=== Salamander Cleanup and Optimize WordPress ===
-Contributors: gillespieza
-Tags: optimisation,snippet
-Requires at least: 6.1
-Tested up to: 6.4.3
-Requires PHP: 7.4
-License: GPL-3.0-or-later
-License URI: https://www.gnu.org/licenses/gpl-3.0.html
+# salamander-cleanup  
+## Salamander Cleanup and Optimize WordPress
+Contributors: gillespieza  
+Tags: optimisation,snippet  
+Requires at least: 6.1  
+Tested up to: 6.4.3  
+Requires PHP: 7.4  
+License: GPL-3.0-or-later  
+License URI: https://www.gnu.org/licenses/gpl-3.0.html  
 
 Removes unnecessary meta, disables emojis, and disables email notifications for updates.
 
-== Description ==
+# Description
 *NOTE:* This isn't really a "proper" plugin - it's really just a collection of snippets that I find useful in almost every WordPress site I set up.
 
 This WordPress plugin removes unnecessary meta tags, disables emojis, and disables email notifications for updates. It also removes various links in the document head, which you might actually want to keep (eg, RSS feeds), depending on your business needs. The following functions are implemented:
