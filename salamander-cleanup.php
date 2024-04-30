@@ -59,6 +59,12 @@ function salamander_disable_emojis() {
 	// Finally, prevent character conversion (otherwise emojis still work if available on user's device).
 	add_filter( 'option_use_smilies', '__return_false' );
 }
+
+/*
+ * We add this `after_setup_theme` - hook called during each page load after
+ * the theme is initialized. This ensures that the callback we are removing has
+ * been added before you try to remove it.
+ */
 add_action( 'init', 'salamander_disable_emojis' );
 
 
@@ -190,3 +196,13 @@ add_filter( 'auto_plugin_update_send_email', '__return_false' );
 
 // Disable auto-update email notifications for themes.
 add_filter( 'auto_theme_update_send_email', '__return_false' );
+
+
+/**
+ * Turns on jQuery migrateMute and adds that to the document `<head>` so our console has less noise.
+ */
+function salamander_mute_jquery_migrator() {
+	echo '<script>jQuery.migrateMute = true;</script>';
+}
+add_action( 'wp_head', 'salamander_mute_jquery_migrator' );
+add_action( 'admin_head', 'salamander_mute_jquery_migrator' );
